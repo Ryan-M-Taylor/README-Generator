@@ -60,9 +60,3 @@ inquirer.prompt(questions).then((response) => {
     err ? console.error(err) : console.log("Commit logged!")
   );
 });
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
