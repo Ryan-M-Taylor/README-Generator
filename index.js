@@ -56,7 +56,7 @@ const questions = [
 // Creates README file
 inquirer.prompt(questions).then((response) => {
   
-  fs.writeFile("README.md", `${generateMarkdown(response)}`, (err) =>
-    err ? console.error(err) : console.log("Commit logged!")
+  fs.writeFile("README.md", generateMarkdown(response), (err) =>
+    err ? console.error(err) : console.log("README Generated!")
   );
 });
